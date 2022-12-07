@@ -1,0 +1,311 @@
+@media (max-width: 1200px) {
+    .hero__content {
+        max-width: 450px;
+    }
+
+    .hero__picture {
+        align-items: start;
+    }
+
+    .hero__picture::before {
+        top: 80px;
+    }
+
+    .hero__image {
+        height: 450px;
+    }
+
+    .circle {
+        top: 20px;
+        width: 350px;
+        height: 350px;
+    }
+
+    .india-preload {
+        top: 250px;
+        left: 15px;
+    }
+
+    .india__animate {
+        top: 150px;
+        left: 150px;
+
+    }
+    .britain-preload {
+        top: 150px;
+        left: -5px;
+    }
+
+    .britain__animate {
+        top: 135px;
+        left: 135px;
+    }
+
+    .italy-preload {
+        top: 15px;
+        left: 90px;
+    }
+
+    .italy__animate {
+        top: 145px;
+        left: 145px;
+    }
+
+    .india-big-preload {
+        top: 90px;
+        left: 330px;
+    }
+
+    .india-big__animate {
+        top: 140px;
+        left: 140px;
+    }
+
+    .india-right-preload {
+        top: 250px;
+        left: 330px;
+    }
+
+    .india-right__animate {
+        top: 150px;
+        left: 150px;
+    }
+
+    @keyframes Orbita {
+        from {
+          transform: rotate(0deg) translateX(175px) rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg) translateX(175px) rotate(-360deg);
+        }
+      }
+}
+
+@media (max-width: 992px) {
+
+    .hero__content {
+        max-width: 400px;
+    }
+
+    .hero__title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* header*/
+
+    .header {
+        margin-bottom: 50px;
+    }
+
+    .header__burger {
+        display: block;
+        z-index: 550;
+    }
+
+    .header__burger--active .burger__line:first-child {
+        left: 0;
+        top: 50%;
+        transform: rotate(45deg);
+        transform-origin: center;
+    }
+
+    .header__burger--active .burger__line:first-child {
+        left: 0;
+        transform: rotate(45deg);
+        transform-origin: center;
+    }
+
+    .header__burger--active .burger__line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .header__burger--active .burger__line:last-child {
+        left: 0;
+        top: 50%;
+        bottom: auto;
+        transform: rotate(-45deg);
+        transform-origin: center;
+    }
+
+    .header__nav {
+        display: none;
+        position: absolute;
+        transform: translateX(-400%);
+        transition: transform 5s ease-in-out;
+        z-index: 500;
+    }
+
+    .header__nav--active {
+        padding-top: 100px;
+        padding-left: 15px;
+        min-width: 250px;
+        height: 100vh;
+        display: block;
+        top: 0;
+        left: 0;
+        transform: none;
+        background-color: #48B774;
+    }
+
+    .header__list {
+        flex-direction: column;
+    }
+
+    .header__item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .header__link {
+        font-size: 20px;
+    }
+
+    /* hero */
+
+    .hero__content {
+        padding-top: 0;
+        max-width: 100%;
+    }
+
+    .hero__input--search {
+        padding-left: 15px;
+    }
+
+    .hero__amount {
+        font-size: 14px;
+    }
+
+    .hero__animation {
+        width: 100%;
+    }
+
+    .hero__picture {
+        align-items: center;
+    }
+
+    .hero__img {
+        height: 400px;
+    }
+
+    .hero__picture::before {
+        top: 140px;
+        width: 140px;
+        height: 140px;
+    }
+
+    .circle {
+        top: 50px;
+        width: 250px;
+        height: 250px;
+    }
+
+    .india {
+        width: 25px;
+        height: 25px;
+    }
+
+    .india-preload {
+        top: 185px;
+    }
+
+    .india__animate {
+        top: 110px;
+        left: 110px;
+    }
+
+    .britain {
+        width: 40px;
+        height: 40px;
+    }
+
+    .britain-preload {
+        top: 85px;
+        left: 5px
+    }
+
+    .britain__animate {
+        top: 100px;
+        left: 100px;
+    }
+
+    .italy-preload {
+        top: 5px;
+        left: 90px;
+    }
+
+    .italy {
+        width: 30px;
+        height: 30px;
+    }
+
+    .italy__animate {
+        top: 105px;
+        left: 105px;
+    }
+
+    .india-big-preload {
+        top: 89px;
+        left: 240px;
+    }
+
+    .india-big__animate {
+        top: 105px;
+        left: 105px;
+    }
+
+    .india-big {
+        width: 35px;
+        height: 35px;
+    }
+
+    .india-right-preload {
+        top: 180px;
+        left: 235px;
+    }
+
+    .india-right {
+        width: 25px;
+        height: 25px;
+    }
+
+    .india-right__animate {
+        top: 110px;
+        left: 110px;
+    }
+
+    @keyframes Orbita {
+        from {
+          transform: rotate(0deg) translateX(125px) rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg) translateX(125px) rotate(-360deg);
+        }
+      }
+}
+
+@media (max-width: 650px) {
+
+    /* header */
+
+    .header {
+        margin-bottom: -25px;
+    }
+
+    /* hero */
+
+    .hero__title {
+        width: 100%;
+    }
+
+    .hero__wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .hero__animation {
+        margin-bottom: -100px;
+    }
+}
